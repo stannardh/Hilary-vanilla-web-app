@@ -34,6 +34,7 @@ dateElement.innerHTML = formatDate(response.data.dt * 1000);
 
 
 let apiKey = "4c3c671c267c67d5291f03e40c1f4165";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=${apiKey}&units=metric`;
+let city = "London"
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
