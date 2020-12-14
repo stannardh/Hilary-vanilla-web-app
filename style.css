@@ -32,6 +32,9 @@ li {
   color: #878787;
   margin-left: 0;
   line-height: 18.6px;
+}
+
+li:first-letter {
   text-transform: capitalize;
 }
 
