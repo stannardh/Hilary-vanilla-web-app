@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css">   
     <title>Vanilla Web App</title>
 </head>
@@ -13,7 +14,7 @@
 <div class="weather-app-wrapper">
   <div class="weather-app">
     <div class="overview">
-  <h1>London, UK</h1>
+  <h1 id="city">London, UK</h1>
    <ul class="dateDescription">
   <li id="time">Sunday 20:00</li>
   <li id="description">Cloudy</li>    
@@ -23,7 +24,7 @@
   <div class="col-6">
     <div class="clearfix weather-temperature">
   <img src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png" alt="cloudy" class="float-left"/>
-<strong>12</strong> 
+<strong id = "temperature">12</strong> 
 <span class="units">°C | <a href="#" id="fahrenheit-link">°F</a></span>
 </div>
 </div>
@@ -31,7 +32,7 @@
     <ul class="weatherDescription">
   <li id ="precipitation">Precipitation: 73%</li>
   <li id="humidity">Humidity: 93%</li>
-  <li id="wind">Wind: 13km/h</li>
+  <li id="wind">Wind: 13</li>
   </ul>
 </div>
 </div>

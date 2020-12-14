@@ -32,6 +32,7 @@ li {
   color: #878787;
   margin-left: 0;
   line-height: 18.6px;
+  text-transform: capitalize;
 }
 
 #temperature {
@@ -77,4 +78,9 @@ li {
 
 #fahrenheit-link {
   text-decoration: none;
+}
+
+#wind-unit {
+  text-transform: lowercase;
+  color: blue;
 }
