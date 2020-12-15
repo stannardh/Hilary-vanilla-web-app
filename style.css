@@ -83,6 +83,15 @@ li:first-letter {
   text-decoration: none;
 }
 
+#celsius-link {
+  text-decoration: none;
+}
+
+.units .active {
+  color: #202124;
+  cursor: default;
+}
+
 #wind-unit {
   text-transform: lowercase;
   color: blue;
