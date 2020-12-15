@@ -36,9 +36,19 @@ iconElement.setAttribute("alt", response.data.weather[0].description)
 
 }
 
-
+function search(city){
 let apiKey = "4c3c671c267c67d5291f03e40c1f4165";
-let city = "Hong Kong"
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-
 axios.get(apiUrl).then(displayTemperature);
+
+}
+
+function handleSubmit(event){
+event.preventDefault();
+let cityInputElement = document.querySelector("#city-input");
+search(cityInputElement.value)
+}
+
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);

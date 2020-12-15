@@ -87,3 +87,25 @@ li:first-letter {
   text-transform: lowercase;
   color: blue;
 }
+
+#city-input {
+  padding: 5px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: 878787;
+  border-radius: 5px;
+  border: #878787 solid 1px;
+}
+
+#submit-city {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 3px 4px 3px 4px;
+  border-radius: 5px;
+  border: #878787 solid 1px;
+  margin-left: 10px;
+  color: #878787;
+}
+
+#submit-city:hover {
+  background-color: #eed675;
+}
