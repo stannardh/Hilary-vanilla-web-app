@@ -118,3 +118,18 @@ li:first-letter {
 #submit-city:hover {
   background-color: #eed675;
 }
+
+#weather-forecast {
+  font-family: Arial, Helvetica, sans-serif;
+  size: 16px;
+  color: #bababa;
+  font-weight: 400;
+  line-height: 15px;
+  padding-top: 7px;
+  text-align: center;
+}
+
+.weather-forecast-temperature {
+  font-family: Arial, Helvetica, sans-serif;
+  size: 14px;
+}
