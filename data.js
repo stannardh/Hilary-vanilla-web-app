@@ -18,6 +18,7 @@ return `${day}, ${hours}:${minutes}`
 
 
 function displayTemperature(response){
+    celsiusTemperature = response.data.main.temp
 let cityElement = document.querySelector("#city");
 cityElement.innerHTML = response.data.name;
 let temperatureElement = document.querySelector("#temperature");
@@ -34,7 +35,7 @@ let iconElement = document.querySelector("#icon");
 iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 iconElement.setAttribute("alt", response.data.weather[0].description)
 
-celsiusTemperature = response.data.main.temp
+
 }
 
 function search(city){
